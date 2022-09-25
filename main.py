@@ -38,7 +38,7 @@ async def main():
         await asyncio.Future()
 
 if __name__ == '__main__':
-    file = open(DATA_PATH, 'rw')
+    file = open(DATA_PATH, 'r')
     data = json.loads(file.read())
     file.close()
     asyncio.run(main())
